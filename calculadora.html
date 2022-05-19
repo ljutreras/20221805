@@ -7,15 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULADORA</title>
     <script>
-        function sumarNumeros(numero1, numero2) {
-            let resultado = numero1 + numero2;
-            console.log(resultado);
+        function sumarNumeros(numero1, numero2) { //Crea la funcion de la SUMA
+            let resultado = numero1 + numero2; //Almacena el resultado de los parametros numero1 y numero2 en la variable RESULTADO
+            console.log("La SUMA de la operatoria es " + resultado); //Imprime el resultado de la SUMA en consola
         }
 
-        function restarNumeros(numero1, numero2) {
-            let resultado = numero1 - numero2;
-            console.log(resultado);
+        function restarNumeros(numero1, numero2) { //Crea la funcion de la RESTA
+            let resultado = numero1 - numero2; //Almacena el resultado de la RESTA de los parametros numero1 y numero2 en la variable RESULTADO
+            console.log("La RESTA de la operatoria es " + resultado); //Imprime en consola el resultado de la operatoria
         }
+
+        function pedirNumeros() { //Crea la Funcion para pedir datos al usuario
+            let numeroOperatoria1 = parseInt(prompt("Ingresa el primer valor de la operatoria: ")); //Almacena en una variable el primer dato entregado por el usuario
+            let numeroOperatoria2 = parseInt(prompt("Ingrese el segundo valor de la operatoria: ")); //Almacena en una variable el segundo dato ingresado por el usuario
+            console.log(sumarNumeros(numeroOperatoria1, numeroOperatoria2)); //Imprime en consola el resultado de la funcion SUMA segun los datos entregados por el usuario
+            console.log(restarNumeros(numeroOperatoria1, numeroOperatoria2)); //Imprime en consola el resultado de la funcion RESTA segun los datos entregados por el usuario
+        }
+        pedirNumeros(); //Llama a la funcion pedirNumeros
     </script>
 </head>
 
